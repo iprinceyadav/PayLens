@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Building2 } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -8,9 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-gradient-to-r from-orange-500 to-red-500 p-2 rounded-lg">
-                <Building2 className="h-8 w-8 text-white" />
-              </div>
+              <img
+                src="/Hindalco_Logo.svg.png"
+                alt="Hindalco Logo"
+                className="h-10 w-auto rounded shadow"
+              />
               <div>
                 <h3 className="text-xl font-bold">Aditya Aluminium Plant</h3>
                 <p className="text-gray-400">Hindalco Industries | Aditya Birla Group</p>
@@ -23,7 +25,7 @@ export default function Footer() {
             <div className="flex space-x-4">
               <div className="flex items-center text-gray-300">
                 <MapPin className="h-5 w-5 mr-2" />
-                <span>Renukoot, Uttar Pradesh</span>
+                <span>Lapanga,Sambalpur,Odisha</span>
               </div>
             </div>
           </div>
