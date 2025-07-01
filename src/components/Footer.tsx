@@ -11,7 +11,7 @@ export default function Footer() {
               <img
                 src="/Hindalco_Logo.svg.png"
                 alt="Hindalco Logo"
-                className="h-10 w-auto rounded shadow"
+                className="h-20 w-auto rounded shadow"
               />
               <div>
                 <h3 className="text-xl font-bold">Aditya Aluminium Plant</h3>

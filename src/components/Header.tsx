@@ -10,14 +10,14 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
   return (
     <header className="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-blue-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2 min-h-0">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-3">
               {/* Hindalco Logo */}
               <img
                 src="/Hindalco_Logo.svg.png"
                 alt="Hindalco Logo"
-                className="h-12 w-auto rounded shadow"
+                className="h-20 w-auto rounded shadow-2xl shadow-blue-500/30"
               />
             </div>
             <div>

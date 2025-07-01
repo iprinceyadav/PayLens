@@ -13,17 +13,19 @@ export default function HeroSection() {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
         <div className="text-center">
-          <div className="mb-8 flex justify-center">
-            <div className="flex items-center space-x-6 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
-              {/* Hindalco Logo */}
+          <div className="mb-8 flex flex-col items-center justify-center">
+            {/* Hindalco Logo - inside blur box */}
+            <div className="flex items-center justify-center bg-white/10 backdrop-blur-md rounded-xl p-2 border border-white/20 mb-2">
               <img
-                src="/Hindalco_Logo.svg.png"
+                src="/Hindalco_NewLogo.png"
                 alt="Hindalco Logo"
-                className="h-14 w-auto rounded shadow"
+                className="h-28 w-auto rounded shadow-2xl shadow-blue-500/30"
               />
-              <div className="text-left">
-                <div className="text-xl font-bold text-white">HINDALCO INDUSTRIES LTD</div>
-                <div className="text-sm text-blue-200">Aditya Birla Group</div>
+            </div>
+            <div className="flex flex-col items-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 mt-2">
+              <div className="text-center">
+                <div className="text-sm font-bold text-white">HINDALCO INDUSTRIES LTD</div>
+                <div className="text-xs text-blue-200">Aditya Birla Group</div>
               </div>
             </div>
           </div>
