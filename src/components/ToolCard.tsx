@@ -4,12 +4,18 @@ import { DivideIcon as LucideIcon } from 'lucide-react';
 interface ToolCardProps {
   title: string;
   description: string;
-  icon: LucideIcon;
+  icon: typeof LucideIcon;
   category: string;
   features?: string[];
 }
 
 export default function ToolCard({ title, description, icon: Icon, category, features }: ToolCardProps) {
+  const handleLearnMore = () => {
+    if (title === "MSME Tracker") {
+      window.open('http://10.56.53.63:8501', '_blank');
+    }
+  };
+
   return (
     <div className="group bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl hover:border-blue-200 transition-all duration-300 overflow-hidden">
       <div className="p-6">
@@ -43,7 +49,10 @@ export default function ToolCard({ title, description, icon: Icon, category, fea
       </div>
       
       <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-6 py-4 border-t border-gray-100">
-        <button className="text-blue-600 font-medium text-sm hover:text-blue-700 transition-colors">
+        <button 
+          onClick={handleLearnMore}
+          className="text-blue-600 font-medium text-sm hover:text-blue-700 transition-colors"
+        >
           Learn More →
         </button>
       </div>
