@@ -12,7 +12,7 @@ interface ToolCardProps {
 export default function ToolCard({ title, description, icon: Icon, category, features }: ToolCardProps) {
   const handleLearnMore = () => {
     if (title === "MSME Tracker") {
-      window.open('http://10.56.53.63:8501', '_blank');
+      window.open('http://10.36.81.147:8507', '_blank');
     }
   };
 

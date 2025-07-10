@@ -5,6 +5,7 @@ import FinanceOperations from './components/FinanceOperations';
 import ReportsAnalytics from './components/ReportsAnalytics';
 import LogisticsExports from './components/LogisticsExports';
 import InvoicingCompliance from './components/InvoicingCompliance';
+import SSICSPOC from './components/SSICSPOC';
 import Footer from './components/Footer';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <FinanceOperations />
         <ReportsAnalytics />
         <InvoicingCompliance />
+        <SSICSPOC />
         <LogisticsExports />
       </main>
       
